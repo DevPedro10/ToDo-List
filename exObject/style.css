@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(assets/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+form {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid gainsboro;
+    width: max-content;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 3px 5px 19px rgba(0, 0, 0, 0.507);
+
+}
+
+
+
+input, label {
+    display: block;
+}
+label {
+    margin: 5px;
+}
+input {
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+
+input::placeholder {
+    text-align: center;
+}
+button {
+    margin-top: 15px;
+    border: 1px solid black;    
+    padding: 5px 10px;
+    background-color: rgb(109, 109, 109);
+    color: rgb(21, 21, 21);
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    color: black;
+}
+
