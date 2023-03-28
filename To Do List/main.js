@@ -18,9 +18,10 @@ retornoDiv.appendChild(showValue);
 }
 
 function createDeleteButton() {
-    const deleteBtn = document.createElement("button");
+    let deleteBtn = document.createElement("img");
     deleteBtn.setAttribute("class", "deleteBtn");
-    deleteBtn.textContent = "Apagar";
+    deleteBtn.setAttribute("src", "assets/trash.svg")
+    deleteBtn.textContent = deleteBtn
     return deleteBtn;
 }
 
@@ -41,7 +42,6 @@ document.addEventListener("click", (e) => {
         guardaTarefas()
     }
 })
-
 
 function guardaTarefas() {
     let itensLista = new Array()
